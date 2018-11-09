@@ -1,0 +1,151 @@
+.news {
+    padding: 80px 0;
+    .container-fluid {
+        padding: 0;
+    }
+    .first-row {
+        position: relative;
+        .intro-holder {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            width: 80%;
+            .intro {
+                padding: 40px 80px 40px 120px;
+                background-color: $midBlue;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                h3 {
+                    font-weight: bold;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    color: $mainYellow;
+                    letter-spacing: 5px;
+                    margin: 0 0 15px 0;
+                }
+                h2 {
+                    font-weight: bold;
+                    font-size: 32px;
+                    color: $white;
+                }
+                p {
+                    font-size: 12px;
+                    color: $white;
+                    width: 80%;
+                    margin-bottom: 50px;
+                }
+                a {
+                    display: inline-block;
+                    position: relative;
+                    font-weight: bold;
+                    color: $white;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        background-color: #fae300;
+                        width: 50px;
+                        height: 3px;
+                    }
+                }
+            }
+        }
+        .slider-col {
+            background-color: $white;
+            position: absolute;
+            right: 0;
+            width: 30%;
+            left: auto;
+            bottom: 0;
+            padding: 25px;
+            .item {
+                .holder {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
+                h3 {
+                    font-weight: bold;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    color: $lightBlue;
+                    letter-spacing: 5px;
+                    margin: 0 0 15px 0;
+                }
+                h2 {
+                    font-size: 24px;
+                    color: $darkBlue;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 12px;
+                    color: $darkBlue;
+                    width: 80%;
+                    margin: 0;
+                }
+            }
+            .slick-dots {
+                text-align: left;
+                bottom: -40px;
+                right: 5px;
+                li {
+                    margin: 0;
+                    width: 15px;
+                    button {
+                        &:before {
+                            color: $midBlue;
+                            font-size: 14px;
+                            opacity: 1;
+                        }
+                    }
+                    &.slick-active {
+                        button {
+                            &:before {
+                                color: $mainYellow;
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sec-row {
+        .blocks-holder {
+            width: 80%;
+            float: right;
+            display: flex;
+            flex-direction: row;
+            .block {
+                background-color: $oddColor;
+                flex: 1;
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                flex-direction: column;
+                h5 {
+                    padding: 30px 30px 0 30px;
+                    font-size: 16px;
+                }
+                span {
+                    padding: 0 30px;
+                    font-size: 8px;
+                    margin-top: 24px;
+                    display: inline-block;
+                }
+                &:last-child {
+                    background-color: $midBlue;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.clients {
+    padding: 50px 0 0 0;
+    header {
+        position: relative;
+        background-color: $midBlue;
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        &:after {
+            content: "";
+            width: 38px;
+            height: 38px;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            border-top: 5px solid #f7d700;
+            border-right: 5px solid #f7d700;
+        }
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            color: $white;
+        }
+        a {
+            display: inline-block;
+            position: relative;
+            color: $white;
+            font-size: 10px;
+            text-transform: uppercase;
+            &:hover {
+                text-decoration: none;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                background-color: #fae300;
+                width: 35px;
+                height: 3px;
+            }
+        }
+    }
+    .clients-slider-container {
+        padding: 0;
+        .clients-slider {
+            .slick-slide {
+                .item {
+                    .img-holder {
+                        padding: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img {
+                            max-width: 100%;
+                            height: 70px;
+                        }
+                    }
+                }
+                &:nth-child(odd) {
+                    .item {
+                        background-color: $oddColor;
+                    }
+                }
+            }
+        }
+    }
+}

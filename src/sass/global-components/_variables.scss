@@ -1,0 +1,49 @@
+/* Device = Most of the Smartphones Mobiles (Portrait) */
+
+$screen-xxs-min: 320px;
+$screen-xxs-max: 480px;
+
+/* Device = Low Resolution Tablets, Mobiles (Landscape) */
+
+$screen-xs-min: 481px;
+$screen-xs-max: 767px;
+
+/* Device = Tablets, Ipads (portrait) */
+
+$screen-sm-min: 768px;
+$screen-sm-max: 1024px;
+
+/* Device = Laptops, Desktops */
+
+$screen-md-min: 1025px;
+$screen-md-max: 1280px;
+
+/* Device = Desktops */
+
+$screen-lg-min: 1281px;
+$screen-lg-max: 1440px;
+
+/* Higher Resolution Screens */
+
+$screen-xlg-min: 1441px;
+$screen-xlg-max: 2560px;
+
+/* Colors */
+
+$white: #fff;
+$mainYellow: #f7d700;
+$mainBlue :#121e75;
+$lightBlue: #008ce1;
+$darkBlue: #272935;
+$midBlue: #212e8a;
+$dotColor: #edcb09;
+$dotInactive: #a6abd0;
+$lightGrey: #7b7d90;
+$linkColor: #212e89;
+$borderColor: #fae300;
+$oddColor: #f6f8fa;
+$navYellow: #fbd500;
+$footerLight: #0e1528;
+$footerDark: #0b101c;
+$listColor: #c7cace;
+$copyColor: #50535d;

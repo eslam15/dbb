@@ -1,0 +1,103 @@
+.awards {
+    position: relative;
+    padding: 80px 0 50px 0;
+    .col-xl-4.col-sm-12 {
+        z-index: 99;
+        .info {
+            z-index: 99;
+            h3 {
+                font-weight: bold;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: $lightBlue;
+                letter-spacing: 5px;
+                margin: 0 0 15px 0;
+            }
+            h2 {
+                font-weight: bold;
+                font-size: 32px;
+                color: $darkBlue;
+            }
+            p {
+                font-size: 12px;
+                color: $darkBlue;
+                width: 80%;
+            }
+            a {
+                display: inline-block;
+                position: relative;
+                font-weight: bold;
+                color: $linkColor;
+                font-size: 12px;
+                text-transform: uppercase;
+                &:hover {
+                    text-decoration: none;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    background-color: #fae300;
+                    width: 40px;
+                    height: 3px;
+                }
+            }
+        }
+    }
+    .col-xl-8.col-sm-12 {
+        padding-right: 0;
+        position: absolute;
+        right: 0;
+        .awards-slider {
+            background-color: $oddColor;
+            padding: 50px 0;
+            .item {
+                .holder {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    span {
+                        font-weight: 500;
+                        font-size: 12px;
+                        text-align: center;
+                        color: $midBlue;
+                        width: 50%;
+                        margin-top: 15px;
+                    }
+                }
+            }
+            &:before {
+                content: "";
+                width: 38px;
+                height: 38px;
+                position: absolute;
+                bottom: -15px;
+                left: -15px;
+                border-bottom: 5px solid #f7d700;
+                border-left: 5px solid #f7d700;
+            }
+            .slick-dots {
+                li {
+                    margin: 0;
+                    button {
+                        &:before {
+                            color: $midBlue;
+                            font-size: 14px;
+                            opacity: 1;
+                        }
+                    }
+                    &.slick-active {
+                        button {
+                            &:before {
+                                color: $mainYellow;
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

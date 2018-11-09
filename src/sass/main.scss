@@ -1,0 +1,21 @@
+// Bootstrap 4
+@import "~bootstrap/scss/bootstrap";
+// Slick Carousel
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
+// Global Components
+@import "global-components/fonts";
+@import "global-components/variables";
+@import "global-components/public";
+// Components 
+@import "components/navbar";
+@import "components/home";
+@import "components/clients";
+@import "components/leadership";
+@import "components/awards";
+@import "components/services";
+@import "components/news";
+@import "components/footer";
+// responsive
+@import "global-components/responsive";
+@import "global-components/browsers";

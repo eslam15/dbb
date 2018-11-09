@@ -1,0 +1,43 @@
+body.ie {
+    // leadership section
+    .leadership {
+        .leadership-container {
+            .leadership-slider {
+                .item {
+                    .holder {
+                        .main-img {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // news section
+    .news {
+        .first-row {
+            .intro-holder {
+                .intro {
+                    width: 60%;
+                }
+                .intro-img {
+                    width: 100%;
+                }
+            }
+        }
+        .sec-row {
+            .blocks-holder {
+                .block {
+                    h5 {
+                        width: 100%;
+                    }
+                    .img-fluid {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
